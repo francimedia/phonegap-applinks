@@ -16,3 +16,4 @@ The approach is using the cordova/phonegap plugin "InAppBrowser" (https://github
 
 ## Example implementations
 * */iconic-example/controller.js*: This approach is based on the use of the Ionic Framework (http://ionicframework.com/), however it should be usable with any AngularJS phonegap app
+* *jquery/app.js*: This approach is using jQuery *(please check for code errors, not tested yet!)*
