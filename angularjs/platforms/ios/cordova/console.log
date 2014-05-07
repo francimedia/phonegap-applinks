@@ -5,3 +5,10 @@
 2014-05-06 22:01:10.815 HelloWorld[5319:4103] ERROR whitelist rejection: url='https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js'
 2014-05-06 22:01:10.905 HelloWorld[5319:70b] Finished load of: file:///Users/Wilkins/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/28614A00-7A82-4AC3-A298-815327605823/HelloWorld.app/www/index.html
 Terminating in response to SpringBoard's termination.
+2014-05-06 22:17:40.508 HelloWorld[5728:70b] Multi-tasking -> Device: YES, App: YES
+2014-05-06 22:17:40.726 HelloWorld[5728:70b] Resetting plugins due to page load.
+2014-05-06 22:17:40.781 HelloWorld[5728:4103] ERROR whitelist rejection: url='https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js'
+2014-05-06 22:17:40.781 HelloWorld[5728:4103] ERROR whitelist rejection: url='https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js'
+2014-05-06 22:17:40.782 HelloWorld[5728:4103] ERROR whitelist rejection: url='https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js'
+2014-05-06 22:17:40.872 HelloWorld[5728:70b] Finished load of: file:///Users/Wilkins/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/28614A00-7A82-4AC3-A298-815327605823/HelloWorld.app/www/index.html
+Terminating in response to SpringBoard's termination.
