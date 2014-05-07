@@ -1,0 +1,26 @@
+{
+    "name": "phonegap-applinkks",
+    "version": "0.0.1",
+    "description": "Handling AppLinks in PhoneGap",
+    "contributors": [{
+        "name": "Stephan Alber"
+    }, {
+        "name": "Wilkins Fernandez"
+    }],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/francimedia/phonegap-applinks.git"
+    },
+    "keywords": [
+        "phonegap",
+        "angularjs",
+        "applink"
+    ],
+    "dependencies": {
+        "phonegap": ">=3.4.0-0.19.21"
+    },
+    "license": "MIT",
+    "engines": {
+        "node": ">=0.10.28"
+    }
+}
