@@ -1,6 +1,6 @@
-angular.module('phoneGapAppLink', [])
+angular.module('MyApp.controllers', [])
 
-.controller('appLink', function ($scope, $http) {
+.controller('MyCtrl', function ($scope, $http) {
 
     var parseXML = function (data) {
 
@@ -15,7 +15,7 @@ angular.module('phoneGapAppLink', [])
     };
 
     var getMetaProperty = function (xml, key) {
-        var metas = xml.getElementsByTagName('meta');
+        var metas = xml.getElementsByTagName('meta')
         for (var i = 0; i < metas.length; i++) {
             if (metas[i].getAttribute('property').toLowerCase() == key) {
                 return metas[i].getAttribute('content');
@@ -32,7 +32,7 @@ angular.module('phoneGapAppLink', [])
         }).
         success(function (data, status, headers, config) {
 
-            // parse the HTML document
+            // parse the HTML document 
             var xml = parseXML(data);
 
             // get the iOS url
@@ -54,7 +54,7 @@ angular.module('phoneGapAppLink', [])
                 // The user could download the app from the app store?
                 var app_store_id = getMetaProperty(xml, 'al:ios:app_store_id');
 
-                // we got one...
+                // we got one...                
                 if (app_store_id) {
                     window.open('itms-apps://itunes.apple.com/app/id' + app_store_id, '_system');
                     return;
@@ -71,5 +71,8 @@ angular.module('phoneGapAppLink', [])
             // fall back to the browser view
             window.open(url, '_system');
         });
+
     };
+
+
 });
