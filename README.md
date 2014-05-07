@@ -12,8 +12,7 @@ Our first quick test method to handle the standard:
 * As Fallback call the original URL
 
 ## Requirements
-The approach is using the cordova/phonegap plugin "inappbrowser":
-https://github.com/apache/cordova-plugin-inappbrowser
+The approach is using the cordova/phonegap plugin "InAppBrowser" (https://github.com/apache/cordova-plugin-inappbrowser)
 
 ## Example implementations
-* Using the Ionic Framework - http://ionicframework.com/
+* */iconic-example/controller.js*: This approach is based on the use of the Ionic Framework (http://ionicframework.com/), however it should be usable with any AngularJS phonegap app
