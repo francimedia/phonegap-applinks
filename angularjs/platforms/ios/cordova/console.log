@@ -4,3 +4,4 @@
 2014-05-06 22:01:10.814 HelloWorld[5319:4103] ERROR whitelist rejection: url='https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js'
 2014-05-06 22:01:10.815 HelloWorld[5319:4103] ERROR whitelist rejection: url='https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js'
 2014-05-06 22:01:10.905 HelloWorld[5319:70b] Finished load of: file:///Users/Wilkins/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/28614A00-7A82-4AC3-A298-815327605823/HelloWorld.app/www/index.html
+Terminating in response to SpringBoard's termination.
