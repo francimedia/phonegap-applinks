@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="phoneGapAppLink" ng-controller="appLink">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+        <meta property="al:ios:url" content="applinks://docs" />
+        <meta property="al:ios:app_store_id" content="12345" />
+        <meta property="al:ios:app_name" content="App Links" />
+        <meta property="al:android:url" content="applinks://docs" />
+        <meta property="al:android:app_name" content="App Links" />
+        <meta property="al:android:package" content="org.applinks" />
+        <meta property="al:web:url" content="http://applinks.org/documentation" />
+        <title>Hello World</title>
+    </head>
+    <body>
+        <div class="app">
+            <h1>PhoneGap</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+        </div>
+
+        <p>
+            <a href="#" ng-click="loadURL('http://your-applinks-url.com/')">Click here</a>
+        </p>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
+
+
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>
