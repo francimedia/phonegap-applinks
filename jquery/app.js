@@ -9,7 +9,7 @@ var appLinks = {
         event.preventDefault();
         var url = $(event.target).attr('href');
 
-        var jqxhr = $.ajax("example.php")
+        var jqxhr = $.ajax(url)
             .done(function (data) {
                 appLinks.callback(data, url);
             })
