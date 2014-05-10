@@ -71,4 +71,17 @@ angular.module('phoneGapAppLink', [])
     };
 
 
+    function onDeviceReady(){
+        var parentElement = document.getElementById('deviceready');
+        var listeningElement = parentElement.querySelector('.listening');
+        var receivedElement = parentElement.querySelector('.received');
+
+        listeningElement.setAttribute('style', 'display:none;');
+        receivedElement.setAttribute('style', 'display:block;');
+    }
+
+
+
+    // Bind'deviceready' event
+    document.addEventListener('deviceready', onDeviceReady, false);
 });
