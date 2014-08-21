@@ -1,4 +1,4 @@
-Using AppLinks in PhoneGap
+Using AppLinks in PhoneGap, Cordova and Iconic
 =================
 
 AppLinks (http://applinks.org/) is an open source approach to unify linking between mobile apps and across platforms.
@@ -17,3 +17,29 @@ The approach is using the cordova/phonegap plugin "InAppBrowser" (https://github
 ## Example implementations
 * */iconic-example/controller.js*: This approach is based on the use of the Ionic Framework (http://ionicframework.com/), however it should be usable with any AngularJS phonegap app
 * *jquery/app.js*: This approach is using jQuery *(please check for code errors, not tested yet!)*
+
+#How to Handle Incoming Links
+
+#### iOS
+
+1\. Add this to your `*-Info.plist` (replace `URL_SCHEME` by a nice scheme you want to have your app listen to, like `mycoolapp`):
+```xml
+<key>CFBundleURLTypes</key>
+<array>
+  <dict>
+    <key>CFBundleURLSchemes</key>
+    <array>
+      <string>URL_SCHEME</string>
+    </array>
+  </dict>
+</array>
+```
+Handle incoming links via the handleOpenURL() function:
+
+```javascript
+function handleOpenURL(url) {
+  setTimeout(function() {
+    alert("url: " + url);
+  }, 1);
+}
+```
