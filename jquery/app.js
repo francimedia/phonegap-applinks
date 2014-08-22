@@ -23,7 +23,7 @@ var appLinks = {
         var xml = $.parseXML(data);
 
         // get the iOS url
-        var ios_url = getMetaProperty(xml, 'al:ios:url');
+        var ios_url = appLinks.getMetaProperty(xml, 'al:ios:url');
 
         // if there is no iOS URL, open the link in the system browser
         if (!ios_url) {
@@ -39,7 +39,7 @@ var appLinks = {
             ref.close();
 
             // The user could download the app from the app store?
-            var app_store_id = getMetaProperty(xml, 'al:ios:app_store_id');
+            var app_store_id = appLinks.getMetaProperty(xml, 'al:ios:app_store_id');
 
             // we got one...                
             if (app_store_id) {
